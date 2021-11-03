@@ -7,10 +7,15 @@ line-length = 120
 
 [tool.poetry]
 name = "pollencli-pyline-removal"
-version = "0.0.1"
-description = ""
+version = "0.0.2"
+description = "Remove lines from python file"
+readme = "README.md"
 authors = ["pollenjp <polleninjp@gmail.com>"]
 license = "MIT"
+# homepage =
+repository = "https://github.com/pollenjp/sandbox-python"
+# documentation =
+
 packages = [
     { include = "pollencli", from = "src" },
 ]
@@ -18,8 +23,11 @@ packages = [
 [tool.poetry.scripts]
 rm-pyline = "pollencli.pyline_removal.cli:main"
 
+[tool.poetry.urls]
+# "Bug Tracker" = "hoge"
+
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.8,<4.0"
 
 [tool.poetry.dev-dependencies]
 black = "^21.10b0"
