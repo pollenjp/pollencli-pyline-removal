@@ -8,14 +8,14 @@ develop-install:
 develop-uninstall:
 	python setup.py develop --uninstall
 
-.PHONY: build-dist
-build-dist:
+.PHONY: rebuild-dist
+rebuild-dist:
+	${MAKE} clean
 	poetry build
 
 .PHONY: testpypi-upload
 testpypi-upload:
-	${MAKE} clean
-	${MAKE} build-dist
+	${MAKE} rebuild-dist
 	poetry publish -r testpypi
 
 .PHONY: testpypi-install
@@ -29,9 +29,8 @@ testpypi-install:
 
 .PHONY: pypi-upload
 pypi-upload:
-	${MAKE} clean
-	${MAKE} build-dist
-	poetry publish -r pypi
+	${MAKE} rebuild-dist
+	poetry publish
 
 .PHONY: pypi-install
 pypi-install:
