@@ -7,7 +7,7 @@ line-length = 120
 
 [tool.poetry]
 name = "pollencli-pyline-removal"
-version = "0.0.4b0"
+version = "0.0.5-alpha"
 description = "Remove lines from python file"
 readme = "README.md"
 authors = ["pollenjp <polleninjp@gmail.com>"]
