@@ -1,6 +1,4 @@
-
-PYTHON_PACKAGE_NAME := pollencli-sandbox03
-PYTHON_PACKAGE_VERSION := 0.0.1
+PYTHON_PACKAGE_NAME := pollencli-pyline-removal
 
 .PHONY: develop-install
 develop-install:
@@ -42,12 +40,6 @@ pypi-install:
 		--no-cache-dir \
 		--upgrade \
 		${PYTHON_PACKAGE_NAME}
-
-.PHONY: dist-install
-dist-install:
-	${MAKE} clean
-	${MAKE} build-dist
-	pip install dist/${PYTHON_PACKAGE_NAME}-${PYTHON_PACKAGE_VERSION}.tar.gz
 
 .PHONY: clean
 clean:
