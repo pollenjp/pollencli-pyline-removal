@@ -1,6 +1,18 @@
 # pollencli-pyline-removal
 
 <p align="center">
+  <a href="https://pypi.org/project/pollencli-pyline-removal/">
+    <img
+      alt="PyPI"
+      src="https://img.shields.io/pypi/v/pollencli-pyline-removal"
+    />
+  </a>
+  <a href="https://pypi.org/project/pollencli-pyline-removal/">
+    <img
+      alt="PyPI Python Versions"
+      src="https://img.shields.io/pypi/pyversions/pollencli-pyline-removal"
+    />
+  </a>
   <a href="https://github.com/psf/black">
     <img
       alt="Issues"
