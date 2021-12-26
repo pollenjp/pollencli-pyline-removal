@@ -21,6 +21,22 @@
   </a>
 </p>
 
+## どんなツールか
+
+Pythonファイル内で指定した関数を呼び出している行を削除するCLIツール
+
+## 使用用途
+
+AtCoder等の競プロの問題を解く際, ローカルで logging 等を用いて途中出力をチェックすることがある.
+しかし, 提出するときはloggingがタイムロスにつながるので削除してから提出する.
+本ツールはそれを実行するコマンドラインツールである.
+
+## Install
+
+```sh
+pip install pollencli-pyline-removal
+```
+
 ## How to use
 
 `rm-pyline <name_id> <src_filepath>` command
