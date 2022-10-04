@@ -19,6 +19,12 @@
       src="https://img.shields.io/badge/code%20style-black-000000.svg"
     />
   </a>
+  <a href="https://pepy.tech/project/pollencli-pyline-removal">
+    <img
+      alt="Downloads"
+      src="https://pepy.tech/badge/pollencli-pyline-removal"
+    />
+  </a>
 </p>
 
 ## どんなツールか
